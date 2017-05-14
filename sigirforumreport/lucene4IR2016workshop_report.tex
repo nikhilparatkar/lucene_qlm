@@ -1,0 +1,100 @@
+\documentclass[12pt]{article}
+\usepackage{fancyhdr}
+\usepackage{url}
+\usepackage{color}
+\usepackage{mathtools}
+
+ \topmargin -0.8cm
+ \oddsidemargin -0.7cm
+
+ \textwidth 17.5cm
+ \textheight 22.6 cm
+
+
+\pagestyle{fancy} {\fancyhead{}
+\fancyfoot[c]{\small{\rule{17.5cm}{1pt}}}}
+
+\begin{document}
+\title{\vspace{-2.5cm}
+\begin{center}
+\textbf{\small{WORKSHOP REPORT}}\\\vspace{-0.5cm} \rule{17.5cm}{1pt}
+\end{center}
+\vspace{1cm}\textbf{Lucene4IR: Developing Information Retrieval Evaluation Resources using Lucene }}
+
+\newcommand{\todo}[1]{\textcolor{red}{#1}}
+\author{
+Leif Azzopardi$^{1}$, Yashar Moshfeghi$^{2}$, Martin Halvey$^{1}$, \\
+ Rami S. Alkhawaldeh$^{2}$, Krisztian Balog$^{3}$, Emanuele Di Buccio $^{4}$, \\
+Diego Ceccarelli$^{5}$, Juan M. Fern\'andez-Luna$^{6}$,\\
+ Charlie Hull$^{7}$, Jake Mannix$^{8}$, Sauparna Palchowdhury$^{9}$\\ 
+    $^{1}$ {\small University of Strathclyde  \emph{ \{Leif.Azzopardi, Martin.Halvey\}@strath.ac.uk}}\\
+    $^{2}$ {\small University of Glasgow\emph{\small {\{Yashar.Moshfeghi, Rami.Alkhawaldeh\}@glasgow.ac.uk}}}\\
+	$^{3}$ {\small University of Stavanger \emph{\small krisztian.balog@uis.no}}\\
+	$^{4}$ {\small University of Padova \emph{\small dibuccio@dei.unipd.it}}\\
+	$^{5}$ {\small Bloomberg \emph{\small dceccarelli4@bloomberg.net}}\\	
+	$^{6}$ {\small University of Granada \emph{\small jmfluna@decsai.ugr.es}}\\
+	$^{7}$ {\small Flax \emph{\small charlie@flax.co.uk}}\\
+	$^{8}$ {\small LucidWorks \emph{\small jake.mannix@lucidworks.com}}\\
+	$^{9}$ {\small National Institute of Standards and Technology, USA \emph{\small sauparna.palchowdhury@nist.gov}}
+}
+
+
+\begin{sloppypar}
+\date{}
+\maketitle \thispagestyle{fancy}
+\abstract{
+The workshop and hackathon on developing Information Retrieval Evaluation Resources using Lucene (L4IR) was held on the 8th and 9th of September, 2016 at the University of Strathclyde in Glasgow, UK and funded by the ESF Elias Network. The event featured three main elements: (i) a series of keynote and invited talks on industry, teaching and evaluation; (ii) planning, coding and hacking where a number of groups created modules and infrastructure to use Lucene to undertake TREC based evaluations; and (iii) a number of breakout groups discussing challenges, opportunities and problems in bridging the divide between academia and industry, and how we can use Lucene for teaching and learning Information Retrieval (IR). The event was composed of a mix and blend of academics, experts and students wanting to learn, share and create evaluation resources for the community. The hacking was intense and the discussions lively creating the basis of many useful tools but also raising numerous issues. It was clear that by adopting and contributing to most widely used and supported Open Source IR toolkit, there were many benefits for academics, students, researchers, developers and practitioners - providing a basis for stronger evaluation practices, increased reproducibility, more efficient knowledge transfer, greater collaboration between academia and industry, and shared teaching and training resources.}
+
+%\maketitle
+
+
+
+\section{Introduction}
+
+Lucene and its expansions, Solr and ElasticSearch, represent the major open source Information Retrieval toolkits used in Industry. However, there is a lack of coherent and coordinated documentation that explains from an experimentalist's point of view how to use Lucene to undertake and perform Information Retrieval Research and Evaluation. In particularly, how to undertake and perform TREC based evaluations using Lucene. Consequently, the objective of this event was to bring together researchers and developers to create a set of evaluation resources showing how to use Lucene to perform typical IR operations (i.e.  indexing, retrieval, evaluation, analysis, etc.) as well as how to extend, modify and work with Lucene to extract typical statistics, implement typical retrieval models, etc. Over the course of the workshop participants shared their knowledge with each other creating a number of resources and guides along with a road map for future development.
+
+\input{talks}
+
+\input{resources}
+
+\section{Discussion}
+During the course of the workshop, two breakout groups were formed to discuss how we can use Lucene when teaching and learning, and what were the main challenges in bridging the industry/academia along with what opportunities it could bring about. Finally, we asked participants to provide some feedback on the event.
+
+
+
+\input{teaching}
+\input{challenges}
+\input{feedback}
+
+
+
+
+\section{Summary}
+This report provides an overview of the workshop on developing teaching and training resources for Information Retrieval evaluation. While, the event was informative and enjoyable, it was clear that there is lot of scope for developing greater links between industry and academia - and that tools like Lucene, Solr and ElasticSearch - provide an obvious way to foster collaboration. Furthermore, such toolkits, being supported by a large community, and widely used, mean that researchers working with such tools can effect more efficient knowledge transfer and their research can have greater impact. Furthermore, students moving into industry can benefit from learning such technologies - which are not only relevant - but because they provide a realistic introduction to using large scale production systems that are used for processing, searching and mining big data. With more focus, and more events, of this nature, we can develop common tools that support research through first developing learning and teaching resources for working with such toolkits. A logical next step would be to bring relevant parties together to bring together the work done during the hackathon, and to integrate the applications within an IR course.
+
+\section{Acknowledgments}
+We thank the European Science Foundation / ELIAS Network for funding the workshop (Grant No. SM 5916). We would also like to thank our speakers as well as Bloomberg, Flax, LucidWorks and the University of Strathclyde. 
+Finally, we would like to thank all the participants, 
+Pablo Arteaga,
+Martynas Buivys, 
+Matteo Catena, 
+Aidan O'Grady, 
+Florence Kolberg, 
+Florian Meier,  
+Mohammad Alian Nejadi,
+Aigars Reiters, 
+Wim Vanderbauwhede, 
+Colin Wilkie,   
+Charlotte Wilson, and 
+Alan Woodward, 
+for their contributions to the workshops and hackathon. Also, thanks to Henry Enfield, Jimmy Lin, Casper Petersen, Ian Soboroff, Manisha Verma, Guido Zuccon, for their offline contributions and discussions.
+
+
+%\todo{Add references to indri, lemur}
+
+\bibliography{lucene4IR}{}
+\bibliographystyle{acm}
+
+%\bibliography{refWS}
+\end{sloppypar}
+\end{document}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<retrievalParams>
+    <indexName>index</indexName>
+    <queryFile>data/cacm/qlm.query</queryFile>
+    <maxResults>100</maxResults>
+    <model>qlm</model>
+    <lambda>0.7</lambda>
+    <resultFile>data/cacm/qlm_results.res</resultFile>
+    <tokenFilterFile>params/index/example_03.xml</tokenFilterFile>
+</retrievalParams>
