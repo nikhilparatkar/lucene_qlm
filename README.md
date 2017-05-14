@@ -3,6 +3,9 @@
 Lucene for Information Retrieval Research and Evaluation
 
 
+# GITHUB LINK TO PROJECT #
+https://github.com/nikhilparatkar/lucene_qlm
+
 
 ## Code and Data
 In ~/lucene4ir/data, there are a number of folders contain different data sets (or part there of).
