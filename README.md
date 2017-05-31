@@ -1,3 +1,8 @@
+Query Likelihood Model implemented in Apache Lucene.
+
+Repository "lucene4ir" pulled from https://github.com/leifos/lucene4ir
+
+
 # lucene4ir
 
 Lucene for Information Retrieval Research and Evaluation
